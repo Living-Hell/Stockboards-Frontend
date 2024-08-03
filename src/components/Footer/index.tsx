@@ -9,6 +9,10 @@ import LocationOnIcon from "@mui/icons-material/LocationOn";
 import AppBar from "@mui/material/AppBar";
 import Container from "@mui/material/Container";
 import Toolbar from "@mui/material/Toolbar";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import XIcon from "@mui/icons-material/X";
 
 const Footer = () => {
   const [value, setValue] = React.useState("recents");
@@ -21,16 +25,17 @@ const Footer = () => {
     <AppBar position="static" className="bg-slate-400">
       <Container maxWidth="xl">
         <Toolbar disableGutters className="flex justify-between items-center">
-          <div>© 2020 Stockboards, Inc. All rights reserved.</div>
+          <div>© 2024 Stockboards, Inc. All rights reserved.</div>
           <BottomNavigation
             showLabels
             value={value}
             onChange={handleChange}
             className="bg-inherit"
           >
-            <BottomNavigationAction label="Recents" icon={<RestoreIcon />} />
-            <BottomNavigationAction label="Favorites" icon={<FavoriteIcon />} />
-            <BottomNavigationAction label="Nearby" icon={<LocationOnIcon />} />
+            <BottomNavigationAction icon={<GitHubIcon />} />
+            <BottomNavigationAction icon={<LinkedInIcon />} />
+            <BottomNavigationAction icon={<InstagramIcon />} />
+            <BottomNavigationAction icon={<XIcon />} />
           </BottomNavigation>
         </Toolbar>
       </Container>
