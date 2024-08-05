@@ -10,6 +10,7 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import { Button, CardActionArea, CardActions, Typography } from "@mui/material";
 import Image from "next/image";
+import AddIcon from "@mui/icons-material/Add";
 
 const DashboardList = [
   {
@@ -19,48 +20,44 @@ const DashboardList = [
     created_by: "Shushant",
     updated_at: "06-08-2024",
     description: "This is just a demo dashboard",
-    image:
-      "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.klipfolio.com%2Fresources%2Fdashboard-examples%2Fexecutive&psig=AOvVaw3mw2L98u2h7jgTbXdjGSfY&ust=1722967526389000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCKC4k5-43ocDFQAAAAAdAAAAABAY",
+    image: "http://igmmudala.org/png/financial-kpi-dashboard-2.png",
   },
   {
     name: "Dashboard 2",
-    id: 1,
+    id: 2,
     created_at: "05-08-2024",
     created_by: "Shushant",
     updated_at: "06-08-2024",
     description: "This is just a demo dashboard",
-    image:
-      "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.klipfolio.com%2Fresources%2Fdashboard-examples%2Fexecutive&psig=AOvVaw3mw2L98u2h7jgTbXdjGSfY&ust=1722967526389000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCKC4k5-43ocDFQAAAAAdAAAAABAY",
+    image: "http://igmmudala.org/png/it-project-management-dashboard-3.png",
   },
   {
     name: "Dashboard 3",
-    id: 1,
+    id: 3,
     created_at: "05-08-2024",
     created_by: "Shushant",
     updated_at: "06-08-2024",
     description: "This is just a demo dashboard",
-    image:
-      "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.klipfolio.com%2Fresources%2Fdashboard-examples%2Fexecutive&psig=AOvVaw3mw2L98u2h7jgTbXdjGSfY&ust=1722967526389000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCKC4k5-43ocDFQAAAAAdAAAAABAY",
+    image: "http://igmmudala.org/png/financial-report-template.png",
   },
   {
     name: "Dashboard 4",
-    id: 1,
+    id: 4,
     created_at: "05-08-2024",
     created_by: "Shushant",
     updated_at: "06-08-2024",
     description: "This is just a demo dashboard",
     image:
-      "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.klipfolio.com%2Fresources%2Fdashboard-examples%2Fexecutive&psig=AOvVaw3mw2L98u2h7jgTbXdjGSfY&ust=1722967526389000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCKC4k5-43ocDFQAAAAAdAAAAABAY",
+      "https://cdn1.dronahq.com/wp-content/uploads/2021/08/Dashboard-Designing-on-DronaHQ-1.svg",
   },
   {
     name: "Dashboard 5",
-    id: 1,
+    id: 5,
     created_at: "05-08-2024",
     created_by: "Shushant",
     updated_at: "06-08-2024",
     description: "This is just a demo dashboard",
-    image:
-      "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.klipfolio.com%2Fresources%2Fdashboard-examples%2Fexecutive&psig=AOvVaw3mw2L98u2h7jgTbXdjGSfY&ust=1722967526389000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCKC4k5-43ocDFQAAAAAdAAAAABAY",
+    image: "http://igmmudala.org/png/management-kpi-dashboard-2.png",
   },
 ];
 
@@ -77,23 +74,19 @@ const Home: React.FC = () => {
   const [dashboards, setDashboards] = React.useState(DashboardList);
 
   const DashboardCards = () => {
-    console.log(dashboards);
     return dashboards?.map((dashboard) => (
       <Grid item xs={4} key={dashboard.id}>
         <Card sx={{ height: 240 }}>
-          <CardActionArea className="h-full">
+          <CardActionArea className="h-full hover:opacity-50">
             <CardMedia
-              component="img"
-              height="140"
-              image={dashboard.image}
-              alt={dashboard.name}
-              src={dashboard.image}
+              component="div"
+              sx={{ position: "relative", height: 140 }}
             >
               <Image
                 alt={dashboard.name}
                 src={dashboard.image}
-                width={200}
-                height={200}
+                layout="fill"
+                objectFit="cover"
               />
             </CardMedia>
             <CardContent>
@@ -113,12 +106,27 @@ const Home: React.FC = () => {
       </Grid>
     ));
   };
+
   return (
-    <Box sx={{ flexGrow: 1 }} className="h-screen m-5">
-      <Grid container spacing={2}>
-        {DashboardCards()}
-      </Grid>
-    </Box>
+    <div id="home" className="h-screen bg-stone-100">
+      <Box sx={{ flexGrow: 1 }} className="h-auto m-5">
+        <Grid container spacing={2}>
+          {DashboardCards()}
+          <Grid item xs={4} key={0}>
+            <Card sx={{ height: 240 }}>
+              <CardActionArea className="h-full">
+                <CardMedia component="div" sx={{ height: 240, opacity: 0.6 }}>
+                  <AddIcon
+                    sx={{ width: "100%", height: "100%" }}
+                    className="hover:opacity-60"
+                  />
+                </CardMedia>
+              </CardActionArea>
+            </Card>
+          </Grid>
+        </Grid>
+      </Box>
+    </div>
   );
 };
 

@@ -43,7 +43,7 @@ const Header = () => {
   };
 
   return (
-    <AppBar position="static" className="sticky top-0">
+    <AppBar position="static" className="sticky top-0 z-10">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <DashboardIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />

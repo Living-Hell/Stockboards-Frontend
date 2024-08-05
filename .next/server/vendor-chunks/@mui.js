@@ -11,6 +11,16 @@ exports.id = "vendor-chunks/@mui";
 exports.ids = ["vendor-chunks/@mui"];
 exports.modules = {
 
+/***/ "(ssr)/./node_modules/@mui/icons-material/Add.js":
+/*!*************************************************!*\
+  !*** ./node_modules/@mui/icons-material/Add.js ***!
+  \*************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+eval("/* __next_internal_client_entry_do_not_use__  cjs */ \nvar _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ \"(ssr)/./node_modules/@babel/runtime/helpers/interopRequireDefault.js\");\nObject.defineProperty(exports, \"__esModule\", ({\n    value: true\n}));\nexports[\"default\"] = void 0;\nvar _createSvgIcon = _interopRequireDefault(__webpack_require__(/*! ./utils/createSvgIcon */ \"(ssr)/./node_modules/@mui/icons-material/utils/createSvgIcon.js\"));\nvar _jsxRuntime = __webpack_require__(/*! react/jsx-runtime */ \"(ssr)/./node_modules/next/dist/server/future/route-modules/app-page/vendored/ssr/react-jsx-runtime.js\");\nvar _default = exports[\"default\"] = (0, _createSvgIcon.default)(/*#__PURE__*/ (0, _jsxRuntime.jsx)(\"path\", {\n    d: \"M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6z\"\n}), \"Add\");\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHNzcikvLi9ub2RlX21vZHVsZXMvQG11aS9pY29ucy1tYXRlcmlhbC9BZGQuanMiLCJtYXBwaW5ncyI6InFEQUFhO0FBR2IsSUFBSUEseUJBQXlCQyxtQkFBT0EsQ0FBQywwSEFBOEM7QUFDbkZDLDhDQUE2QztJQUMzQ0csT0FBTztBQUNULENBQUMsRUFBQztBQUNGRCxrQkFBZSxHQUFHLEtBQUs7QUFDdkIsSUFBSUcsaUJBQWlCUCx1QkFBdUJDLG1CQUFPQSxDQUFDLDhGQUF1QjtBQUMzRSxJQUFJTyxjQUFjUCxtQkFBT0EsQ0FBQyxnSUFBbUI7QUFDN0MsSUFBSVEsV0FBV0wsa0JBQWUsR0FBRyxDQUFDLEdBQUdHLGVBQWVELE9BQU8sRUFBZ0IsV0FBRixHQUFHLElBQUdFLFlBQVlFLEdBQUcsRUFBRSxRQUFRO0lBQ3RHQyxHQUFHO0FBQ0wsSUFBSSIsInNvdXJjZXMiOlsid2VicGFjazovL3N0b2NrYm9hcmRzLy4vbm9kZV9tb2R1bGVzL0BtdWkvaWNvbnMtbWF0ZXJpYWwvQWRkLmpzPzNjMGUiXSwic291cmNlc0NvbnRlbnQiOlsiXCJ1c2Ugc3RyaWN0XCI7XG5cInVzZSBjbGllbnRcIjtcblxudmFyIF9pbnRlcm9wUmVxdWlyZURlZmF1bHQgPSByZXF1aXJlKFwiQGJhYmVsL3J1bnRpbWUvaGVscGVycy9pbnRlcm9wUmVxdWlyZURlZmF1bHRcIik7XG5PYmplY3QuZGVmaW5lUHJvcGVydHkoZXhwb3J0cywgXCJfX2VzTW9kdWxlXCIsIHtcbiAgdmFsdWU6IHRydWVcbn0pO1xuZXhwb3J0cy5kZWZhdWx0ID0gdm9pZCAwO1xudmFyIF9jcmVhdGVTdmdJY29uID0gX2ludGVyb3BSZXF1aXJlRGVmYXVsdChyZXF1aXJlKFwiLi91dGlscy9jcmVhdGVTdmdJY29uXCIpKTtcbnZhciBfanN4UnVudGltZSA9IHJlcXVpcmUoXCJyZWFjdC9qc3gtcnVudGltZVwiKTtcbnZhciBfZGVmYXVsdCA9IGV4cG9ydHMuZGVmYXVsdCA9ICgwLCBfY3JlYXRlU3ZnSWNvbi5kZWZhdWx0KSggLyojX19QVVJFX18qLygwLCBfanN4UnVudGltZS5qc3gpKFwicGF0aFwiLCB7XG4gIGQ6IFwiTTE5IDEzaC02djZoLTJ2LTZINXYtMmg2VjVoMnY2aDZ6XCJcbn0pLCAnQWRkJyk7Il0sIm5hbWVzIjpbIl9pbnRlcm9wUmVxdWlyZURlZmF1bHQiLCJyZXF1aXJlIiwiT2JqZWN0IiwiZGVmaW5lUHJvcGVydHkiLCJleHBvcnRzIiwidmFsdWUiLCJkZWZhdWx0IiwiX2NyZWF0ZVN2Z0ljb24iLCJfanN4UnVudGltZSIsIl9kZWZhdWx0IiwianN4IiwiZCJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///(ssr)/./node_modules/@mui/icons-material/Add.js\n");
+
+/***/ }),
+
 /***/ "(ssr)/./node_modules/@mui/icons-material/Dashboard.js":
 /*!*******************************************************!*\
   !*** ./node_modules/@mui/icons-material/Dashboard.js ***!
