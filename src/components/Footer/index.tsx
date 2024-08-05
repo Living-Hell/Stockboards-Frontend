@@ -22,7 +22,7 @@ const Footer = () => {
   };
 
   return (
-    <AppBar position="static" className="bg-slate-400">
+    <AppBar position="static" className="bg-slate-400 bottom-0">
       <Container maxWidth="xl">
         <Toolbar disableGutters className="flex justify-between items-center">
           <div>© 2024 Stockboards, Inc. All rights reserved.</div>
