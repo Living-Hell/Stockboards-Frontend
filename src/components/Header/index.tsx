@@ -17,11 +17,19 @@ import DashboardIcon from "@mui/icons-material/Dashboard";
 import ProfileAvatar from "../../assets/images/profileAvatar.jpg";
 import Brightness4Icon from "@mui/icons-material/Brightness4";
 import Brightness7Icon from "@mui/icons-material/Brightness7";
+import { Theme } from "@mui/material";
 
 const pages = ["Home", "Dashboards", "Widgets"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
-const Header = ({ colorMode, theme }) => {
+type ColorMode = {
+  toggleColorMode: () => void;
+};
+
+const Header: React.FC<{ colorMode: ColorMode; theme: Theme }> = ({
+  colorMode,
+  theme,
+}) => {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
     null
   );
