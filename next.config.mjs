@@ -8,6 +8,7 @@ const nextConfig = {
       "www.istockphoto.com",
       "igmmudala.org",
       "cdn2.iconfinder.com",
+      "www.coffed.coop",
     ],
     formats: ["image/avif", "image/webp"],
   },
