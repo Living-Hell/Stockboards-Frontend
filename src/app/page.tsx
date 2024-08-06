@@ -9,10 +9,11 @@ import {
   Typography,
 } from "@mui/material";
 import Image from "next/image";
+import PersonAddAltIcon from "@mui/icons-material/PersonAddAlt";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center p-24">
+    <div className="flex min-h-screen flex-col items-center justify-center p-24 pt-0">
       <Typography variant="h2" component="h2" className="mb-10 font-sans">
         Welcome to Stockboards!
       </Typography>
@@ -34,7 +35,7 @@ export default function Home() {
             component={"img"}
             alt="Signup"
             height={160}
-            image="https://www.coffed.coop/images/login.png"
+            image={"https://www.coffed.coop/images/login.png"}
           />
           <CardContent></CardContent>
           <CardActionArea className="flex justify-center content-center">

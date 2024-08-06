@@ -15,11 +15,13 @@ import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import DashboardIcon from "@mui/icons-material/Dashboard";
 import ProfileAvatar from "../../assets/images/profileAvatar.jpg";
+import Brightness4Icon from "@mui/icons-material/Brightness4";
+import Brightness7Icon from "@mui/icons-material/Brightness7";
 
 const pages = ["Home", "Dashboards", "Widgets"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
-const Header = () => {
+const Header = ({ colorMode, theme }) => {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
     null
   );
@@ -133,6 +135,17 @@ const Header = () => {
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
+            <IconButton
+              sx={{ mr: 4 }}
+              onClick={colorMode.toggleColorMode}
+              color="inherit"
+            >
+              {theme.palette.mode === "dark" ? (
+                <Brightness7Icon />
+              ) : (
+                <Brightness4Icon />
+              )}
+            </IconButton>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                 <Avatar
@@ -141,6 +154,7 @@ const Header = () => {
                 />
               </IconButton>
             </Tooltip>
+
             <Menu
               sx={{ mt: "45px" }}
               id="menu-appbar"
